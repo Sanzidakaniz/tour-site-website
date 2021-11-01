@@ -6,7 +6,7 @@ const PlaceOrder = () => {
     const { register, handleSubmit,reset } = useForm();
   const onSubmit = data => {
     console.log(data);
-axios.post('http://localhost:5000/orders',data)
+axios.post('https://fierce-sierra-02972.herokuapp.com/orders',data)
     .then(res=>{
       if(res.data.insertedId){
         alert('Successfully Added');
@@ -17,18 +17,14 @@ axios.post('http://localhost:5000/orders',data)
   }
    
     return (
-        <div className="add-service">
-          <br/>
-        <br/>
-        
-        
-       <h1 className="new">Place your Order</h1>
+        <div className="add">
+          <h1 className="new">Place your Order</h1>
        <form onSubmit={handleSubmit(onSubmit)}>
       <input {...register("name" )} placeholder="Name" />
-      <textarea {...register("Address" )} placeholder="Address"/>
+      <textarea {...register("Address" )} placeholder=" Address"/>
       <input type="number" {...register("phone")} placeholder="Phone" />
       <input {...register("service" )} placeholder="Service" />
-      <input type="submit" />
+      <input className="btn-danger" type="submit" />
     </form>
     <br/>
     <br/>

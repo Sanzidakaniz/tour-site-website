@@ -28,8 +28,18 @@ const Header = () => {
                             <NavLink id="navMenu" to="/home">Home</NavLink> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             <NavLink id="navMenu" to="/about">About</NavLink>&nbsp;&nbsp;&nbsp;
                             <NavLink id="navMenu" to="/Contact">Contact</NavLink>&nbsp;&nbsp;&nbsp;
-                            <NavLink id="navMenu" to="/AddService">Add Services</NavLink>&nbsp;&nbsp;&nbsp;
-                            <NavLink id="navMenu" to="/ManageAllOrders">Manage All Orders</NavLink>&nbsp;&nbsp;&nbsp;
+                         
+                            {
+                              user.email?
+                             <Nav>
+                                <NavLink id="navMenu" to="/AddService">Add Services</NavLink>
+                                &nbsp;&nbsp;&nbsp;
+                              <NavLink id="navMenu" to="/MyOrder">My Order</NavLink>
+                               </Nav>
+                              :
+                              <div></div>
+                            }
+                           
                             
                            
 

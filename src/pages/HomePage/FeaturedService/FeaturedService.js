@@ -3,7 +3,7 @@ import { useHistory } from 'react-router';
 
 const FeaturedService = (props) => {
     // Destructuring the service data from object
-    const {_id, name, description, serviceImg,price} = props.service;
+    const {_id, name, description, img,price} = props.service;
 
     // Use history for changing the route after clicking the button
     const history = useHistory();
@@ -23,7 +23,7 @@ const FeaturedService = (props) => {
         <div className="row">
 <div className="col-md-12">
 <div className="serviceBox">
-          <img src={serviceImg} alt="serviceImg" width="100%" height="150" />
+          <img src={img} alt="serviceImg" width="100%" height="150" />
           <h2 className="serviceTitle">{name}</h2>
           <p className="serviceDesc">${price}</p>
           <p className="serviceDesc"> { description.slice(1, 120)}</p>

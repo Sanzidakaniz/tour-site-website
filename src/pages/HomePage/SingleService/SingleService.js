@@ -34,7 +34,7 @@ const SingleService = () => {
      }
     
      // Destructuring the single service data from object
-     const {name, description, serviceImg,price} = services;
+     const {name, description, img,price} = services;
     
     return (
         <div className="singleServiceArea">
@@ -42,7 +42,7 @@ const SingleService = () => {
                  <div className="row">
                      <div className="col-md-5 col-sm-12">
                          <div className="singleServiceBox">
-                             <img src={serviceImg} alt="serviceImg" />
+                             <img src={img} alt="serviceImg" />
                              <div className="details">
                              <h2 className="serviceTitle">{name}</h2>
                              <p className="serviceDesc">${price}</p>
@@ -52,7 +52,7 @@ const SingleService = () => {
                          </div>
                      </div>
                      <div className="col-md-7 col-sm-12  ">
-                        <PlaceOrder></PlaceOrder>
+                       <div className="place-order"> <PlaceOrder></PlaceOrder></div>
                      </div>
                  </div>
              </div>

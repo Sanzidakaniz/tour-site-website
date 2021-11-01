@@ -16,6 +16,9 @@ import Footer from './pages/SharedComponent/Footer/Footer';
 import ErrorPage from './pages/Error404Page/ErrorPage';
 import Contact from './pages/Contact/Contact';
 import AddService from './pages/AddService/AddService';
+import MyOrder from './pages/MyOrder/MyOrder';
+
+
 
 
 
@@ -23,7 +26,7 @@ import AddService from './pages/AddService/AddService';
 
 function App() {
   return (
-    <div className="App">
+   
      <AuthProvider>
      <BrowserRouter>
         <Header />
@@ -34,6 +37,7 @@ function App() {
           <Route exact path="/home">
             <Home />
           </Route>
+          
           <Route exact path="/about">
             <About />
           </Route>
@@ -49,6 +53,9 @@ function App() {
          <Route exact path="/Contact">
    <Contact></Contact>
       </Route>
+         <Route  path="/MyOrder">
+   <MyOrder></MyOrder>
+      </Route>
          <PrivateRoute  exact path="/AddService">
    <AddService></AddService>
    </PrivateRoute>
@@ -59,7 +66,7 @@ function App() {
         <Footer />
       </BrowserRouter>
      </AuthProvider>
-    </div>
+    
   );
 }
 

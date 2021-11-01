@@ -7,7 +7,7 @@ const About = () => {
            <div className="aboutHospital">
                 <div className="container">
                     <div className="row">
-                        <h2 style={{color:"#444", fontSize: "45px", fontWeight: 700, textAlign: "center", marginBottom: "40px"}}>About Us</h2>
+                        <h2 style={{color:"#444", fontSize: "45px", fontWeight: 700, textAlign: "center", marginBottom: "10px"}}>About Us</h2>
                         <div className="col-lg-7 col-md-6 col-sm-12">
                             <div className="aboutInfo">
                               
