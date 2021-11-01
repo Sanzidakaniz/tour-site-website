@@ -23,7 +23,7 @@ const Home = () => {
 <div className="banner-container ">
         <div className="">
           <div className="row d-flex banner align-items-center justify-content-center">
-       <div className="col-md-9">
+       <div className="col-md-9 col-sm-12">
               <h6 className="title">
                 Make A Tour with Us.
               </h6>

@@ -11,7 +11,7 @@ const Footer = () => {
                      
                        <div className="col-lg-4 col-md-3 col-sm-3">
                            <div className="secondFooterBox">
-                    <div className="footerNavbar mx-4">
+                    <div className="footerNavbar">
                     <h3 className="itemName">Pages</h3>
                         <NavLink id="menu" to="/home"><span className="menus">Home</span></NavLink>
                         <NavLink id="menu" to="/about"><span className="menus">About</span></NavLink>
@@ -35,10 +35,10 @@ const Footer = () => {
                            <div className="secondFooterBox"> 
                     <div className="footerNavbar">
                     <h3 className="itemName">Branches</h3>
-                       <span className="add">Rangpur</span>
-                       <span className="add">Chadpur</span>
-                       <span className="add">Dhaka</span>
-                       <span className="add">Rajshahi</span>
+                       <span className="">Rangpur</span>
+                       <span className="">Chadpur</span>
+                       <span className="">Dhaka</span>
+                       <span className="">Rajshahi</span>
                                </div>
                            </div>
                        </div>

@@ -40,7 +40,7 @@ const SingleService = () => {
         <div className="singleServiceArea">
              <div className="container">
                  <div className="row">
-                     <div className="col-md-5 col-sm-12">
+                     <div className="col-md-5 col-sm-8">
                          <div className="singleServiceBox">
                              <img src={img} alt="serviceImg" />
                              <div className="details">
@@ -51,7 +51,7 @@ const SingleService = () => {
                              </div>
                          </div>
                      </div>
-                     <div className="col-md-7 col-sm-12  ">
+                     <div className="col-md-7 col-sm-8  ">
                        <div className="place-order"> <PlaceOrder></PlaceOrder></div>
                      </div>
                  </div>
