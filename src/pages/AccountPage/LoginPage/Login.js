@@ -3,7 +3,6 @@
 import './Login.css';
 import { useLocation, useHistory } from 'react-router-dom';
 
-import GoogleIcon from '../../images/google.cadee8cd.png';
 import useAuth from '../../../customHooks/useAuth/useAuth';
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 
@@ -62,15 +61,9 @@ const Login = () => {
                      </div>
                      <div className="col-lg-5 col-md-6 col-sm-12">
                           <div className="loginForm">
-                              <h2 className="doctorName">Login Here</h2>
-                              <form onSubmit={handleSignin}>
-                                  {/* <input type="email" onBlur={handleEmail} placeholder="Enter your email" required /> <br />
-                                  <input type="password" onBlur={handlePassword} placeholder="Enter your password" required /> <br />
-                                  <button className="submitBtn">Login</button> <br /> */}
-                                  <span onClick={handleGoogleLogin} className="apiProvider"><img src={GoogleIcon} alt="apiImg" />Signin with Google</span>
-                                 
-                              </form> <br />
-                              {/* <span style={{ color: "#444", fontWeight: "500", marginTop: "10px"}}>Are you new user ? <Link to="/registration">Register Here</Link></span> */}
+                              <h2 className="">Login Here</h2>
+                              <br/>
+                              <button className="btn btn-primary" onClick={handleGoogleLogin} >Signin with Google</button>
                           </div>
                      </div>
                  </div>
@@ -80,3 +73,12 @@ const Login = () => {
 };
 
 export default Login;
+
+// <form onSubmit={handleSignin}>
+// {/* <input type="email" onBlur={handleEmail} placeholder="Enter your email" required /> <br />
+// <input type="password" onBlur={handlePassword} placeholder="Enter your password" required /> <br />
+// <button className="submitBtn">Login</button> <br /> */}
+// <button className="btn btn-primary" onClick={handleGoogleLogin} >Signin with Google</button>
+
+// </form> <br />
+// {/* <span style={{ color: "#444", fontWeight: "500", marginTop: "10px"}}>Are you new user ? <Link to="/registration">Register Here</Link></span> */}
