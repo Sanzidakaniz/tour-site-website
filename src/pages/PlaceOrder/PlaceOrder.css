@@ -1,0 +1,18 @@
+.new{
+    /* margin-top: 10px; */
+     text-align: center;
+ }
+ .add-service form{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     
+    
+ }
+ .add-service form input,textarea{
+     width:40%;
+ }
+ .add-service{
+     background-color: rgb(238, 230, 218);
+ }
