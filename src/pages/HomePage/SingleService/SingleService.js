@@ -16,7 +16,7 @@ const SingleService = () => {
      
       // Getting the service data from separate data loading file
       useEffect( () => {
-        fetch('http://localhost:5000/services')
+        fetch('https://fierce-sierra-02972.herokuapp.com/services')
         .then(res => res.json())
         .then(data =>setServices(data));
     }, [uniqueId]);
