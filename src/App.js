@@ -59,7 +59,7 @@ function App() {
          <PrivateRoute  exact path="/AddService">
    <AddService></AddService>
    </PrivateRoute>
-          <Route path="*">
+          <Route exact path="*">
           <ErrorPage />
           </Route>
         </Switch>
